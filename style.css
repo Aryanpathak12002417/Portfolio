@@ -100,22 +100,18 @@ body{
     }
 }
 
-@keyframes  header-ball-animation{
-
-    0%{
-        left: 0%;
+@media (max-width: 470px) {
+    .rocket{
+        display: none;
     }
-    25%{
-        left:25%;
+    .header-animation{
+        display: none;
     }
-    50%{
-        left:50%
-    }
-    100%{
-        left:100%
+    .intro-detail{
+        max-width: 100%;
     }
 
-}
+  }
 
 .header-animation{
 
