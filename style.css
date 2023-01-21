@@ -1,0 +1,105 @@
+.navbar-custom{
+    background-color: white;
+}
+.navbar-brand{
+    font-size: 28px;
+}
+.nav-link,.navbar-brand{
+    color: black;
+}
+.nav-link{
+    font-size: 17px;
+}
+.svg{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+}
+.svg1{
+    top: 4%;
+    left: 35%;
+}
+.svg2{
+    top:60%;
+    left:70%;
+    transform: rotate(-85deg);
+    height: 100px;
+    width: 100px;
+}
+.svg3{
+    top: 35%;
+    left: 8%;
+}
+.intro-container{
+    min-height: 90vh;
+}
+
+.img{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    z-index: -1;
+    opacity: 70%;
+    
+}
+.back-img1{
+    top: 25%;
+    left: 65%;
+    transform: rotate(30deg);
+}
+
+.back-img2{
+    top: 75%;
+    left: 35%;
+
+}
+.back-img3{
+    top: 10%;
+    left: 15%;
+    transform: rotate(-30deg);
+}
+.back-img4{
+    top: 41%;
+    left: 10%;
+    height: 20vh;
+    width: 20vh;
+    opacity: 100%;
+}
+.intro-detail{
+    max-width: 50%;
+}
+
+.card-holder{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*
+    Progress Bar css
+
+*/
+
+@keyframes progressAnimation {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+.progress-bar{
+    width: 0%;
+}
+
+.progress-bar-animation{
+    animation: progressAnimation 3s ease-in-out forwards;
+}
+
+
