@@ -1,3 +1,7 @@
+body{
+    scroll-behavior: smooth;
+}
+
 .navbar-custom{
     background-color: white;
 }
@@ -68,6 +72,237 @@
 }
 .intro-detail{
     max-width: 50%;
+}
+
+.card-holder{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*Header Animation*/
+
+@keyframes header-box-animation {
+    0%{
+        left: -40px;
+    }
+    25%{
+        left:25%;
+        background-color: #e1433e;
+    }
+    50%{
+        left:50%;
+        background-color: #ecb234;
+    }
+    100%{
+        left:100%;
+        background-color:#e1433e
+    }
+}
+
+@keyframes  header-ball-animation{
+
+    0%{
+        left: 0%;
+    }
+    25%{
+        left:25%;
+    }
+    50%{
+        left:50%
+    }
+    100%{
+        left:100%
+    }
+
+}
+
+.header-animation{
+
+    position: relative;
+    top: 8rem;
+    height: 40px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    border-radius: 1px;
+    overflow: hidden;
+
+}
+
+
+.header-animation-box{
+
+    width: 40px;
+    height: 38px;
+    background-color: #d9534f;
+    position: relative;
+    animation: header-box-animation 20s ease infinite;
+
+}
+
+/* .header-animation-ball{
+    width: 35px;
+    height: 35px;
+    left: 50px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+} */
+
+
+/*Rocket Animation*/
+
+@keyframes rocket-animation {
+    0%{
+        left:-25%;
+        top:0px;
+    }
+    30%{
+        left: 23%;
+        top:25%;
+        transform: rotate(56deg);
+    }
+    40%{
+        transform: rotate(165deg);
+    }
+    60%{
+        top:76%;
+        left: -25px;
+    }
+    95%{
+        opacity: 100%;
+        top:80%;
+        left: 20%;
+        transform: rotate(-45deg);
+        
+    }
+    100%{
+        opacity: 0%;
+        top:80%;
+        left: 20%;
+        transform: rotate(-45deg);
+    }
+    
+}
+
+.rocket{
+    position: absolute;
+    top: 0px;
+    left: -25%;
+    transform: rotate(36deg);
+    z-index: -1;
+    
+    animation: rocket-animation 20s ease  1 forwards ;
+}
+
+
+
+/*
+    Progress Bar css
+
+*/
+
+
+/*Animation keyframes of all progress bar*/
+
+@keyframes progressAnimation1 {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes progressAnimation2 {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 78%;
+    }
+}
+
+@keyframes progressAnimation3 {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes progressAnimation4 {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes progressAnimation5 {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 71%;
+    }
+}
+
+@keyframes progressAnimation6 {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+
+.progress-bar{
+    width: 0%;
+}
+
+.progress-bar-animation-skill1{
+    animation: progressAnimation1 3s ease-in-out forwards;
+}
+
+.progress-bar-animation-skill2{
+    animation: progressAnimation2 3s ease-in-out forwards;
+}
+
+.progress-bar-animation-skill3{
+    animation: progressAnimation3 3s ease-in-out forwards;
+}
+
+.progress-bar-animation-skill4{
+    animation: progressAnimation4 3s ease-in-out forwards;
+}
+
+.progress-bar-animation-skill5{
+    animation: progressAnimation5 3s ease-in-out forwards;
+}
+
+.progress-bar-animation-skill6{
+    animation: progressAnimation6 3s ease-in-out forwards;
 }
 
 
