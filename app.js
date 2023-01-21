@@ -7,7 +7,24 @@ const skill6=document.querySelector('.skill6');
 
 const progress=document.querySelector('.progress-bar')
 
+if(window.innerHeight<=1006){
+    
+    var parent=document.querySelector('.intro-container');
 
+    var alert=document.createElement('div')
+   
+    alert.innerHTML=`
+        <div class="alert alert-success alert-danger1 alert-dismissible fade show" role="alert">
+        <strong>Please try to Switch to a Bigger Screen</strong> to get better Experience. We are working for small screen device. Sorry for inconvince.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+    `
+    parent.append(alert);
+
+
+}
 
 window.addEventListener('scroll',()=>{
     if(window.scrollY>=1015){
@@ -23,6 +40,38 @@ window.addEventListener('scroll',()=>{
 
         
     }
+    console.log(typeof window.innerWidth)
 })
 
-console.log('YEs')
+
+async function  getJoke(){
+   const jokeData= await fetch('https://icanhazdadjoke.com/',{
+    headers:{
+        'Accept':'application/json'
+    }
+   })
+   const jokeObject= await jokeData.json();
+   return jokeObject.joke;
+}
+
+const jokeButton=document.querySelector('.get-joke');
+
+jokeButton.addEventListener('click', async ()=>{
+    var check=document.querySelector('.alert-danger1');
+    var parent=document.querySelector('.intro-container');
+    if(check!=undefined || check!=null){
+        check.remove()
+    }
+    let joke= await getJoke();
+    var alert=document.createElement('div')
+   
+    alert.innerHTML=`
+        <div class="alert alert-success alert-danger1 alert-dismissible fade show" role="alert">
+        ${joke}.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+    `
+    parent.append(alert);
+});
