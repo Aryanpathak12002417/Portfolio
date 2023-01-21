@@ -7,23 +7,21 @@ const skill6=document.querySelector('.skill6');
 
 const progress=document.querySelector('.progress-bar')
 
-if(window.innerHeight<=1006){
+if(window.innerWidth<=992){
+
+        var parent=document.querySelector('.intro-container');
     
-    var parent=document.querySelector('.intro-container');
-
-    var alert=document.createElement('div')
-   
-    alert.innerHTML=`
-        <div class="alert alert-success alert-danger1 alert-dismissible fade show" role="alert">
-        <strong>Please try to Switch to a Bigger Screen</strong> to get better Experience. We are working for small screen device. Sorry for inconvince.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-    `
-    parent.append(alert);
-
-
+        var alert=document.createElement('div')
+       
+        alert.innerHTML=`
+            <div class="alert alert-success alert-danger1 alert-dismissible fade show" role="alert">
+            <strong>Please try to Switch to a Bigger Screen</strong> to get better Experience. We are working for small screen device. Sorry for inconvince.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+        `
+        parent.append(alert);
 }
 
 window.addEventListener('scroll',()=>{
@@ -40,7 +38,7 @@ window.addEventListener('scroll',()=>{
 
         
     }
-    console.log(typeof window.innerWidth)
+    console.log(window.innerWidth);
 })
 
 

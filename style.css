@@ -84,23 +84,23 @@ body{
 
 @keyframes header-box-animation {
     0%{
-        left: -40px;
+        right: -60%;
     }
-    25%{
-        left:25%;
-        background-color: #e1433e;
+    55%{
+        right:25%;
     }
-    50%{
-        left:50%;
-        background-color: #ecb234;
+    65%{
+        right:50%;
+    }
+    70%{
+        right:60%
     }
     100%{
-        left:100%;
-        background-color:#e1433e
+        right:100%;
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 999px) {
     .rocket{
         display: none;
     }
@@ -117,7 +117,6 @@ body{
 
     position: relative;
     top: 8rem;
-    height: 40px;
     width: 100%;
     border-bottom: 2px solid black;
     border-radius: 1px;
@@ -133,12 +132,8 @@ body{
 
 
 .header-animation-box{
-
-    width: 40px;
-    height: 38px;
-    background-color: #d9534f;
     position: relative;
-    animation: header-box-animation 20s ease infinite;
+    animation: header-box-animation 18s ease-in-out infinite;
 
 }
 

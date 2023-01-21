@@ -32,7 +32,69 @@
               <a class="nav-link" href="#">Contact Me</a>
             </li>
           </ul>
-          <button class="btn btn-success">Hire Me</button>
+          <!-- <button class="btn btn-success">Hire Me</button> -->
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+            Hire Me
+          </button>
+
+
+
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Drop a Message on my mail</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <form action="https://formsubmit.co/aryanpathak989@gmail.com" method="POST">
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">Email To</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" name="email" id="inputPassword"
+                          value="aryanpathak989@gmail.com" placeholder="Email" readonly required>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" name="name" id="inputPassword" placeholder="Your Name"
+                          required>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">Reply To</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" name="email" id="inputPassword"
+                          placeholder="Your Email Address" required>
+                      </div>
+                    </div>
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <button class="btn btn-success" type="submit">Send</button>
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <blockquote class="blockquote text-center">
+                    <footer class="blockquote-footer">ThankYou For Choosing Me. I will try to reach you as soon as
+                      possible. <cite title="Source Title">Aryan Pathak</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -76,12 +138,15 @@
               software engineering domain. Possess excellent knowledge in HTML, CSS, Javascript, Jquery. Ability to
               learn things quickly and capable of working in a fast-paced and team-driven environment.</p>
           </div>
-          <button type="button" class="btn btn-outline-info btn-lg get-joke">Hey Siri? Tell me a joke</button>
+          <button type="button" class="btn btn-outline-danger btn-lg get-joke">Hey Siri? Tell me a joke</button>
 
 
           <div class="header-animation">
             <div class="header-animation-box">
+              <img height="15%" width="15%" style="position: relative;" src="Image/mustang-car.png" alt="">
             </div>
+
+
           </div>
 
         </div>
@@ -114,8 +179,8 @@
                 <img class="card-img-top" src="Image/hackerrank.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Hacker Rank</h5>
-                  <p class="card-text">Leetcode is an online coding platform where I have solved 150 plus question have
-                    100 plus community views. Click below to see my leetcode profile</p>
+                  <p class="card-text">90% Coders Start there coding and DSA journey from this site and so do I. I Have
+                    5 Star rating in problem solving by C/C++ at hackerrank. Click below to visit profile</p>
                   <a href="https://www.hackerrank.com/aryanpathak989" target="_blank" class="btn btn-success">Vist
                     Profile</a>
                 </div>
@@ -128,8 +193,7 @@
                 <img class="card-img-top" src="Image/geeks.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">GeeksForGeeks</h5>
-                  <p class="card-text">Leetcode is an online coding platform where I have solved 150 plus question have
-                    100 plus community views. Click below to see my leetcode profile</p>
+                  <p class="card-text">Impossible to become a computer science graduate without GFG. It is the golden rule and i follow that rule. Currently having 192 points at GFG in problem solving</p>
                   <a href="https://auth.geeksforgeeks.org/user/l9v2kps1tcmyijoia6w47rkrbzjdc8etssjdigor/practice"
                     target="_blank" class="btn btn-success">Vist Profile</a>
                 </div>
@@ -208,7 +272,6 @@
       </div>
     </div>
   </div>
-
 
 
 
